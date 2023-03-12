@@ -1,0 +1,69 @@
+ <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('image/abs-g0e1dc2563_1280.jpg');
+            height: 850px;
+            color: white;
+
+        }
+
+        header {
+            background-color: rgba(168, 123, 65, 0.182);
+            height: 7%;
+             
+        }
+
+
+
+
+        .left {
+            border: 2px solid rgb(184, 32, 32);
+            display: inline-block;
+            position: absolute;
+            left: 53px;
+            top: 0px;
+            width: 120px;
+            padding: 18px;
+
+
+
+        }
+
+        .mid {
+            border: 2px solid rgb(6, 239, 87);
+            display: block;
+            margin: 0px auto;
+            width: 39%;
+            padding: 3px;
+            display: block;
+            margin: auto;
+
+        }
+
+        .right {
+            border: 2px solid rgb(49, 5, 243);
+            position: absolute;
+            right: 20px;
+            top: 0px;
+            padding: 18px;
+        }
+       /* .navbar{
+            display: inline-block;
+        }*/
+
+        .navbar li {
+             display: inline-block;
+             color: aliceblue;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration-line: none;
+           padding: 5px 10px;
+
+        }
+        .navbar li a:hover, .navbar li .a :active{
+            text-decoration: underline;
+            color: gray;
+        }
+    </style>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM SPORTS CLUB</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> -->
+
+
+    <style>
+        body {
+            margin-top: 0px;
+            padding: 0px;
+            background: url('image/abs-g0e1dc2563_1280.jpg');
+            height: 850px;
+            color: white;
+            font-size: 17px;
+            /* font-family: 'Merriweather', serif; */
+
+        }
+
+        header {
+            background-color: rgba(168, 123, 65, 0.182);
+            height: 7%;
+            width: 100%;
+        }
+
+        /* Navbar*/
+        /*Logo*/
+        .left {
+            /*border: 2px solid rgb(184, 32, 32);*/
+            display: inline-block;
+            position: absolute;
+            left: 30px;
+            top: -9px;
+            width: 99px;
+            padding: 0px;
+        }
+
+        .left img {
+            width: 90px;
+            filter: invert(100%);
+            margin: -7px;
+            margin-left: 48px;
+        }
+
+
+        /* Navbar*/
+        .mid {
+            /*border: 2px solid rgb(6, 239, 87);*/
+            display: block;
+            margin: 0px auto;
+            width: 39%;
+            padding: 3px;
+            display: block;
+            margin: auto;
+        }
+
+        .navbar {
+            display: inline-block
+        }
+
+        .navbar li {
+            display: inline-block;
+            color: aliceblue;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration-line: none;
+            padding: 5px 10px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li .a :active {
+            text-decoration: underline;
+            color: rgb(158, 63, 16);
+        }
+
+        /* join button*/
+        .right {
+            /* border: 2px solid rgb(49, 5, 243);*/
+            position: absolute;
+            right: 81px;
+            top: 0px;
+            padding: 10px;
+        }
+
+        .btn {
+            background-color: blue;
+            color: white;
+            border: 11px solid blue;
+            padding: 1px 24px;
+            border-radius: 24px;
+            font-size: 17px;
+
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: blue;
+            border: 11px solid white;
+        }
+
+        /* about for our coach */
+        .img_left img {
+
+            margin-top: 730px;
+
+            width: 415px;
+            height: 400px;
+
+        }
+
+        .right_about {
+            /* border: 2px solid red; */
+            background-color: rgba(95, 149, 197, 0.182);
+
+            position: absolute;
+            top: 788px;
+            right: 410px;
+            width: 400px;
+            height: 400px;
+        }
+
+        .right_about h1 {
+            text-align: center;
+        }
+
+        /* Bookking form */
+        .from_box {
+            /* border: 2px solid green; */
+            margin: 106px;
+            padding: 25px;
+            width: 33%;
+            background-color: rgba(88, 125, 190, 0.078);
+            position: absolute;
+            right: 25px;
+        }
+
+        .from_box input,
+        select {
+            padding: 5px;
+            margin: 10px;
+
+        }
+
+        .from_box h1 {
+            text-align: center;
+            background-color: green;
+        }
+
+        .from_box button {
+
+            background-color: green;
+            display: block;
+            margin: auto;
+
+        }
+
+        .button:hover {
+            background-color: transparent;
+            color: green;
+        }
+
+        .header_contact {
+            /* border: 2px solid green; */
+            height: 650px;
+            background-color: rgb(70, 13, 203);
+        }
+
+        .inquary {
+            position: absolute;
+            /* border: 2px solid red; */
+            width: 459px;
+            height: 500px;
+            padding: 0px;
+            margin-top: 20px;
+
+
+        }
+
+
+        .header_contact .inquary {
+            padding: 20px;
+            margin-top: 35px;
+            margin-left: 50px;
+        }
+
+        .inquary input {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #f5efef;
+            width: 365px;
+            box-shadow: transparent;
+            outline: none;
+            padding: 0px;
+            margin-left: 20px;
+
+
+        }
+
+        .inquary_input {
+            margin-top: 0px;
+        }
+
+
+        .inquary textarea {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #f5efef;
+            outline: none;
+            width: 365px;
+            height: 100px;
+            margin-left: 20px;
+
+        }
+
+        .inquary button {
+            background-color: transparent;
+            color: #f5efef;
+            border: none;
+            display: inline;
+            position: absolute;
+            right: 120px;
+            margin: 25px;
+        }
+
+        .sub_btn:hover {
+            color: #8d8484;
+        }
+
+        .inquary input,
+        select {
+            padding: 0px;
+            margin: 20px;
+        }
+
+
+
+
+
+        .info {
+            position: absolute;
+            right: 100px;
+            margin-top: 62px;
+            /* border: 2px solid yellow; */
+            width: 270px;
+            height: 300px;
+        }
+
+        .info .mail_con {
+            color: #f5efef;
+            text-decoration: none;
+        }
+
+        .con_head {
+            color: black;
+        }
+
+        .social_media .instagram {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            object-fit: cover;
+
+        }
+
+        .social_media .mail {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .social_media .facebook {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .social_media .youtube {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .social_media .linkedin {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .social_media .twitter {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .contact_button {
+            /* border: 2px solid red; */
+            width: 200px;
+            height: 500px;
+            display: block;
+            margin: auto;
+            padding-top: 58px;
+            padding-left: 0px;
+        }
+
+        .contact_button h2{
+            padding-left: 60px;
+        }
+        .contact_button .navbar li{
+            padding: 20px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <header class=" header">
+        <!-- logo -->
+        <div class="left">
+            <img src=" image\—Pngtree—badges sport fitness athletic gym_7784087.png" alt="">
+        </div>
+        <!-- Navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="Home" class="actioc">Home</a></li>
+                <li><a href="About us">About Us</a></li>
+                <li><a href="Gallery">Gallery</a></li>
+                <li><a href="Membership">Membership</a></li>
+                <li><a href="Contact us">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- join button -->
+        <div class="right">
+            <button class="btn"> Join Now</button>
+        </div>
+
+    </header>
+
+    <!-- Booking From -->
+    <div class="from_box">
+        <h1>Book Now</h1>
+        <form action="noaction.php">
+            <div class="form-input">
+                <label for="name">Name</label>
+                <input type="text" name="" placeholder=" Enter Your Name">
+            </div>
+
+            <div class="form-input">
+                <label for="email">Email</label>
+                <input type="text" name="" placeholder="Enter Your Mail">
+            </div>
+
+            <div class="form-input">
+                <label for=" Phone No"> Phone No</label>
+                <input type="text" name="" placeholder="Enter Your Mobile number">
+            </div>
+            <div class="form-input">
+                <label for="Sex">Sex</label>
+                <select id="form_select">
+                    <option value="Select your sex">Select Your Sex</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+            </div>
+            <div class="form_input">
+                <label for="Age">Age</label>
+                <input type="text" name="" placeholder="Enter Your Age">
+
+            </div>
+            <div class=" form-input">
+                <label for="Weight">Weight</label>
+                <input type="text" name="" placeholder="Enter your Weight">
+
+
+            </div>
+            <div class="form_input">
+                <label for="Time">Time</label>
+                <select name="time" id="time">
+                    <option value="Select Your Timing"> Select Your Timing</option>
+                    <option value="5AM-7AM">5AM-7AM</option>
+                    <option value="7AM-9AM">7AM-9AM</option>
+                    <option value="5PM-7PM">5PM-7PM</option>
+                    <option value="7PM-9PM">7PM-9PM</option>
+                    <option value="9PM-11PM">9PM-11PM</option>
+                </select>
+
+            </div>
+            <div class="form_input">
+                <label for="Area">Area</label>
+                <select name="area" id="area">
+                    <option value="Select Area">Select Area</option>
+                    <option value="Gurugram">Gurugram</option>
+                    <option value="Faridabad">Faridabad</option>
+                    <option value="Central Delhi">Central Delhi</option>
+                    <option value="South Delhi">South Delhi</option>
+                </select>
+
+            </div>
+
+        </form>
+        <div class="button">
+
+            <button class="button">Sumit Now</button>
+
+        </div>
+    </div>
+    <!-- About for our coach -->
+    <div class="img_left">
+        <img src="image\240_F_102784490_zQNUnZuut2pKpeQ3tv695nQ5JHAziz0X.jpg" alt="">
+    </div>
+    <div class="right_about">
+        <h1>MEET THE COACH</h1>
+        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double
+            click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you
+            like on your page. I’m a great place for you to tell a story and let your users know a little more about
+            you.</p>
+        <p>This is a great space to write long text about your company and your services. You can use this space to go
+            into a little more detail about your company. Talk about your team and what services you provide. Tell your
+            visitors the story of how you came up with the idea for your business and what makes you different from your
+            competitors. Make your company stand out and show your visitors who you are.</p>
+    </div>
+    <header class="header_contact">
+        <div class="inquary">
+            <h2 class="con_head">LET's GET MOVING</h2><br>
+            <form action="no.php">
+
+                <div class="inquary_input">
+                    <label for="input">Full Name:</label> <br>
+                    <input type="text" name="Full Name">
+
+                    <div>
+                        <label for="input">Email:</label> <br>
+                        <input type="text" name="Email">
+                    </div>
+
+                    <div>
+                        <label for="input">Phone:</label> <br>
+                        <input type="text" name="Phone">
+                    </div>
+                    <div>
+                        <label for="input">Text Your Meassage</label><br>
+                        <textarea id="message" type="text" name="Meassage"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button class="sub_btn">Submit</button>
+                </div>
+
+            </form>
+
+
+        </div>
+        <div class="info">
+            <h2 class="con_head">CONTACT US</h2>
+
+            <p> Gheorghe Lazar, no. 24, Fructus Plaza
+                Second Floor (SAD 13), 300081
+                Timisoara, Romania, EU</p><br>
+            <div class="social_media">
+                <a href="http://www.instagram.com" target="blank"><img class="instagram"
+                        src="https://tse1.mm.bing.net/th?id=OIP.D2iYkbHbJpguO1tvGkZKvQHaHP&pid=Api&P=0"
+                        alt="instagram"></a>
+                <a href="mailto:gymclub@yourdomain.com" target="blank"><img class="mail"
+                        src="https://tse1.mm.bing.net/th?id=OIP.IpB5yPUkCFHOzlmM-O7ncAHaFW&pid=Api&P=0" alt="mail"></a>
+                <a href="http://www.facebook.com" target="blank"><img class="facebook"
+                        src="https://tse1.explicit.bing.net/th?id=OIP.Ua5AXhtGRgPuisZVmetclQHaFL&pid=Api&P=0"
+                        alt="facebook"></a>
+                <a href="http://www.youtube.com" target="blank"><img class="youtube"
+                        src="https://tse4.mm.bing.net/th?id=OIP.70aBZiBRZ09EkAB4JTPstAHaHa&pid=Api&P=0"
+                        alt="youtube"></a>
+                <a href="http://www.linkedin.com" target="blank"><img class="linkedin"
+                        src=" https://tse3.mm.bing.net/th?id=OIP.YAP68AIxePtv-3cv8ffzggHaHw&pid=Api&P=0"
+                        alt="linkedin"></a>
+                <a href="http://twitter.com" target="blank"><img class="twitter"
+                        src="https://tse1.mm.bing.net/th?id=OIP.PSj_SQum7CH01WhmY2kFcAHaHx&pid=Api&P=0"
+                        alt="twitter"></a>
+            </div><br>
+            <p>© 2023 123FormBuilder</p>
+
+        </div>
+        <div class="contact_button">
+            <h2 class="con_head">LINKS</h2>
+
+            <ul class="navbar">
+                <li><a href="Home" class="actioc">Home</a></li><br>
+                <li><a href="About us">About Us</a></li><br>
+                <li><a href="Gallery">Gallery</a></li><br>
+                <li><a href="Membership">Membership</a></li>
+                <li><a href="Contact us">Contact Us</a></li>
+            </ul>
+
+
+        </div>
+
+    </header>
+
+
+
+
+</body>
+
+
+</html>
